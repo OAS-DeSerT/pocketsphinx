@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py" output="screen">
+    <param name="mic_name" value="alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback"/>
+    <param name="hmm" value="/usr/local/share/pocketsphinx/model/en-us/en-us"/>
+    <param name="dict" value="$(find pocketsphinx)/demo/voice_cmd.dic"/>
+    <param name="lm" value="$(find pocketsphinx)/demo/voice_cmd.lm"/>
+  </node>
+
+</launch>
