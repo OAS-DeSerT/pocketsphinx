@@ -6,7 +6,7 @@
     <param name="dict" value="$(find pocketsphinx)/demo/voice_cmd.dic"/>
     <param name="source" value="alsasrc"/>
   </node>
-  
+
   <node name="voice_control_step" pkg="pocketsphinx" type="voice_control_example.py"/>
 
 </launch>

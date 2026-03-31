@@ -6,7 +6,7 @@
     <param name="dict" value="$(find pocketsphinx)/demo/voice_cmd.dic"/>
     <param name="source" value="alsasrc"/>
   </node>
-  
+
   <node name="voice_cmd_vel" pkg="pocketsphinx" type="voice_cmd_vel.py">
     <remap from="cmd_vel" to="mobile_base/commands/velocity"/>
   </node>
